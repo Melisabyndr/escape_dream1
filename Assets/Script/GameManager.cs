@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
 
     public void WinGame()
