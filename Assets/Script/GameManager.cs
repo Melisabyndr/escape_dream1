@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         gameOverPanel.SetActive(true);
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
     }
 
     public void WinGame()
@@ -34,4 +34,5 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+   
 }
