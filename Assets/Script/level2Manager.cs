@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
-public class GameManager : MonoBehaviour
+public class level2Manager : MonoBehaviour
 {
     public GameObject gameOverPanel;
     public GameObject winPanel;
@@ -11,46 +10,23 @@ public class GameManager : MonoBehaviour
     {
         gameOverPanel.SetActive(false);
         winPanel.SetActive(false);
-
-        // Oyun başta dursun
-        Time.timeScale = 0f;
-
-        // 2 saniye sonra başlat
-        StartCoroutine(GameStartDelay());
-    }
-
-    IEnumerator GameStartDelay()
-    {
-        yield return new WaitForSecondsRealtime(2f);
-
-        Time.timeScale = 1f;
     }
 
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
-
         Time.timeScale = 0f;
     }
 
     public void WinGame()
     {
         winPanel.SetActive(true);
-
-        StartCoroutine(NextLevel());
-    }
-
-    IEnumerator NextLevel()
-    {
-        yield return new WaitForSecondsRealtime(2f);
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 0f;
     }
 
     public void RetryGame()
     {
         Time.timeScale = 1f;
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
