@@ -37506,6 +37506,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.72
       objectReference: {fileID: 0}
+    - target: {fileID: 5795779491863085462, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
+      propertyPath: sprintSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8346627728049700152, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
       propertyPath: field of view
       value: 45
