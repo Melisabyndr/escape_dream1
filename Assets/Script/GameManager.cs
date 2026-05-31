@@ -1,56 +1,37 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverPanel;
     public GameObject winPanel;
 
+    public bool isGameOver = false;
+
     void Start()
     {
         gameOverPanel.SetActive(false);
         winPanel.SetActive(false);
-
-        // Oyun başta dursun
-        Time.timeScale = 0f;
-
-        // 2 saniye sonra başlat
-        StartCoroutine(GameStartDelay());
-    }
-
-    IEnumerator GameStartDelay()
-    {
-        yield return new WaitForSecondsRealtime(2f);
-
-        Time.timeScale = 1f;
     }
 
     public void GameOver()
     {
+        isGameOver = true;
         gameOverPanel.SetActive(true);
-
-        Time.timeScale = 0f;
+        Time.timeScale = 0;
     }
 
     public void WinGame()
     {
+        isGameOver = true;
+        Debug.Log("Win panel aktif ediliyor");
         winPanel.SetActive(true);
-
-        StartCoroutine(NextLevel());
+        Time.timeScale = 0;
     }
 
-    IEnumerator NextLevel()
+    public void RestartGame()
     {
-        yield return new WaitForSecondsRealtime(2f);
-
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void RetryGame()
-    {
-        Time.timeScale = 1f;
-
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

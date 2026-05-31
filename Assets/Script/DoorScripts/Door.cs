@@ -1,84 +1,69 @@
 using UnityEngine;
-using System.Collections;
 
 public class Door : MonoBehaviour
 {
     public Transform door;     // iç kapı
-    public GameObject qText;   // Kapıyı Aç yazısı
-    public GameObject messageText; // Anhatar gerekli
+    public GameObject qText;   // Press Q yazısı
+    public GameObject messageText;
 
-    public AudioSource doorSound; // Kapı sesi
+    public bool hasKey = false;
 
-    public bool hasKey = false; // Oyuncunun anahtarı var mı kontrol
-
-    private bool playerNear; // oyuncu kapıya yakın mı
-    public bool isOpen = false; // kapı hiç açıldı mı
+    private bool playerNear;
+    public bool isOpen = false;
 
     void Start()
-    {// yazıyı gizler
+    {
         if (qText != null)
-            qText.SetActive(false); 
+            qText.SetActive(false);
 
         if (messageText != null)
             messageText.SetActive(false);
     }
 
     void Update()
-    {// oyuncu yakınsa yazı çıkar
+    {
         if (playerNear && Input.GetKeyDown(KeyCode.Q))
         {
-            TryOpenDoor();
+            OpenDoor();
         }
     }
 
-    void TryOpenDoor()
+    void OpenDoor()
     {
-        if (isOpen) return;//kapı açıksa tekrar çalışmaz
+        if (!hasKey)
+        {
+            if (messageText != null)
+                messageText.SetActive(true);
+            StartCoroutine(HideMessage());
+
+            System.Collections.IEnumerator HideMessage()
+            {
+                yield return new WaitForSeconds(2f);
+
+                if (messageText != null)
+                    messageText.SetActive(false);
+            }
+
+            return;
+        }
+
+        if (!hasKey)
+        {
+            Debug.Log("Kapıyı açmak için anahtar gerekli!");
+            return;
+        }
+
+        if (isOpen) return;
+
+        if (door != null)
+            door.localRotation = Quaternion.Euler(0, 90, 0);
+
+        isOpen = true;
+        FindFirstObjectByType<GameManager>().WinGame();
 
         if (qText != null)
             qText.SetActive(false);
 
-        if (!hasKey)
-        {
-            ShowMessage();
-            return;
-        }
-
-        OpenDoor();
-    }
-    void OpenDoor()
-    {
-        if (door != null)
-            door.localRotation = Quaternion.Euler(0, 90, 0);
-
-        // Kapı açılınca ses çal
-        if (doorSound != null)
-            doorSound.Play();
-
-        isOpen = true;
-
-        Debug.Log("Kapı açıldı!");
-
-        if (messageText != null)
-            messageText.SetActive(false);
-
-        FindFirstObjectByType<GameManager>().WinGame();
-    }
-
-    void ShowMessage() // anahtar gerekli
-    {
-        if (messageText != null)
-            messageText.SetActive(true);
-
-        StartCoroutine(HideMessage());
-    }
-
-    IEnumerator HideMessage()
-    {
-        yield return new WaitForSeconds(2f);
-
-        if (messageText != null)
-            messageText.SetActive(false);
     }
 
     public void GiveKey()
@@ -90,6 +75,7 @@ public class Door : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Trigger çalıştı");
         if (other.CompareTag("Player"))
         {
             playerNear = true;
@@ -108,5 +94,13 @@ public class Door : MonoBehaviour
             if (qText != null)
                 qText.SetActive(false);
         }
+    }
+
+    //Invoke("HideMessage", 2f);
+
+    void HideMessage()
+    {
+        if (messageText != null)
+            messageText.SetActive(false);
     }
 }
