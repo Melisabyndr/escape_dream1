@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("escape dreamm");
+        SceneManager.LoadScene("IntroScene");
 
     }
     public void ExitGame()

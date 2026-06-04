@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: "Assets/Main men\xFC/Main men\xFC.unity"
     guid: b8cde75c05894d042bc7b15a8c0068b9
   - enabled: 1
+    path: Assets/IntroScene/IntroScene.unity
+    guid: ccfda4ddd1e9b6a4a9c45fee529ba9e8
+  - enabled: 1
     path: Assets/escape dreamm.unity
     guid: 5a57bf22a9cd16047b530918c9b769d4
   - enabled: 1
     path: Assets/sahne2.unity
     guid: 8f4da448ce300fb47ad032b5a576ac1b
+  - enabled: 1
+    path: Assets/sahne3.unity
+    guid: b144b50ef54ff3f43b565735132adf12
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
