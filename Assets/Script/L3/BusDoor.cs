@@ -76,6 +76,13 @@ public class BusDoor : MonoBehaviour
 
         doorOpened = true;
         Debug.Log("Kapılar içe doğru açıldı!");
+        StartCoroutine(WinAfterDoor());
+        IEnumerator WinAfterDoor()
+        {
+            yield return new WaitForSeconds(1f); // kapı açılma hissi
+
+            FindFirstObjectByType<Level3Manager>().WinGame();
+        }
     }
 
     IEnumerator ShowNoGasMessage()

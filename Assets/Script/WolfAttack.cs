@@ -14,7 +14,7 @@ public class WolfAttack : MonoBehaviour
     [Header("Yakalama")]
     public float catchDistance = 1.5f;
     public float biteOffset = 0.8f;
-    public GameManager gameManager;
+    public Level3Manager gameManager;
     public float gameOverDelay = 1.5f;
     public float wolfFreezeDelay = 1f;
 
