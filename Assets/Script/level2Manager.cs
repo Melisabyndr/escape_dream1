@@ -6,16 +6,13 @@ public class level2Manager : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject winPanel;
 
-    [Header("Restart")]
-    [Tooltip("Build Settings'teki sahne2 index'i (genelde 2)")]
-    public int restartSceneBuildIndex = 2;
-
     public bool isGameOver = false;
 
     void Start()
     {
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
+
         if (winPanel != null)
             winPanel.SetActive(false);
 
@@ -25,6 +22,7 @@ public class level2Manager : MonoBehaviour
     public void GameOver()
     {
         if (isGameOver) return;
+
         isGameOver = true;
 
         if (gameOverPanel != null)
@@ -38,6 +36,7 @@ public class level2Manager : MonoBehaviour
     public void WinGame()
     {
         if (isGameOver) return;
+
         isGameOver = true;
 
         if (winPanel != null)
@@ -50,24 +49,20 @@ public class level2Manager : MonoBehaviour
 
     public void RestartGame()
     {
-        Debug.Log("RestartGame (sahne2) - sahne yükleniyor, index: " + restartSceneBuildIndex);
-
-        isGameOver = false;
         Time.timeScale = 1f;
+        isGameOver = false;
 
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(false);
-        if (winPanel != null)
-            winPanel.SetActive(false);
-
-        SceneManager.LoadScene(restartSceneBuildIndex, LoadSceneMode.Single);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    /// <summary>
-    /// Eski buton bağlantıları RetryGame kullanıyorsa çalışmaya devam eder.
-    /// </summary>
     public void RetryGame()
     {
         RestartGame();
+    }
+
+    public void NextLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

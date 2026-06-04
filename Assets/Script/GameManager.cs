@@ -6,16 +6,13 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject winPanel;
 
-    [Header("Restart")]
-    [Tooltip("Build Settings'teki escape dreamm index'i (genelde 1)")]
-    public int restartSceneBuildIndex = 1;
-
     public bool isGameOver = false;
 
     void Start()
     {
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
+
         if (winPanel != null)
             winPanel.SetActive(false);
 
@@ -25,6 +22,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         if (isGameOver) return;
+
         isGameOver = true;
 
         if (gameOverPanel != null)
@@ -38,6 +36,7 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         if (isGameOver) return;
+
         isGameOver = true;
 
         if (winPanel != null)
@@ -50,15 +49,15 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Debug.Log("RestartGame - sahne yükleniyor, index: " + restartSceneBuildIndex);
-
-        isGameOver = false;
         Time.timeScale = 1f;
+        isGameOver = false;
 
-        if (gameOverPanel != null)
-            gameOverPanel.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
-        // Build index ile yükle (escape dreamm = 1)
-        SceneManager.LoadScene(restartSceneBuildIndex, LoadSceneMode.Single);
+    public void NextLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

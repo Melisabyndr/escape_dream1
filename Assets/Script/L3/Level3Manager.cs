@@ -1,25 +1,65 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level3Manager : MonoBehaviour
 {
     public GameObject gameOverPanel;
     public GameObject winPanel;
 
-    bool oyunBitti = false;
+    public bool isGameOver = false;
+
+    void Start()
+    {
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+
+        if (winPanel != null)
+            winPanel.SetActive(false);
+
+        Time.timeScale = 1f;
+    }
 
     public void GameOver()
     {
-        if (oyunBitti) return;
+        if (isGameOver) return;
 
-        oyunBitti = true;
-        gameOverPanel.SetActive(true);
+        isGameOver = true;
+
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
+
         Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void WinGame()
     {
-        Debug.Log("WIN GAME ÇALIŞTI - KİM ÇAĞIRDI?");
-        winPanel.SetActive(true);
+        if (isGameOver) return;
+
+        isGameOver = true;
+
+        if (winPanel != null)
+            winPanel.SetActive(true);
+
         Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        isGameOver = false;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }
