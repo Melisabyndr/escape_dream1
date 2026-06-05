@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private float yVelocity;
     private bool isDead;
 
-    Animator anim;
+    private Animator anim;
 
     void Start()
     {
@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
             anim.applyRootMotion = false;
 
         cc = GetComponent<CharacterController>();
+
         if (cc == null)
         {
             Debug.LogError("CharacterController bulunamadı. Lütfen Player objesine ekleyin.");
@@ -43,23 +44,28 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead || cc == null || !cc.enabled) return;
 
+        // Mouse ile karakteri sağa sola döndürür
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         transform.Rotate(0f, mouseX, 0f);
 
+        // Klavye hareketi
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        Vector3 move = transform.right * h + transform.forward * v;
+        Vector3 input = new Vector3(h, 0f, v);
 
-        if (move.magnitude > 1f)
-            move.Normalize();
+        if (input.magnitude > 1f)
+            input.Normalize();
 
-        // Shift basılıyken hız artar
+        Vector3 move = transform.right * input.x + transform.forward * input.z;
+
+        // Sadece ileri giderken Shift ile koşsun
         bool isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
         float currentSpeed = (isSprinting && v > 0f) ? sprintSpeed : speed;
 
         cc.Move(move * currentSpeed * Time.deltaTime);
 
+        // Zıplama ve gravity
         if (cc.isGrounded && yVelocity < 0f)
             yVelocity = -2f;
 
@@ -69,19 +75,22 @@ public class PlayerController : MonoBehaviour
         yVelocity += gravity * Time.deltaTime;
         cc.Move(Vector3.up * yVelocity * Time.deltaTime);
 
+        // Animasyon
         if (anim != null)
         {
-            float animSpeed = v;
-            if (isSprinting && v > 0f)
-                animSpeed = 2f;
+            float moveAmount = input.magnitude;
 
-            anim.SetFloat("Speed", animSpeed);
+            if (isSprinting && v > 0f)
+                moveAmount = 2f;
+
+            anim.SetFloat("Speed", moveAmount);
         }
     }
 
     public void Die()
     {
         if (isDead) return;
+
         isDead = true;
 
         if (anim != null)
@@ -95,6 +104,7 @@ public class PlayerController : MonoBehaviour
             cc.enabled = false;
 
         Rigidbody rb = GetComponent<Rigidbody>();
+
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
