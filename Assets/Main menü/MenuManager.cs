@@ -1,17 +1,12 @@
 using UnityEngine;
 
-public class MenuManager : MonoBehaviour
+public class ButtonSound : MonoBehaviour
 {
-    public GameObject infoPanel;
+    public AudioSource audioSource;
+    public AudioClip clickSound;
 
-    public void ShowInfo()
+    public void PlayClickSound()
     {
-        Debug.Log("Buton çalıştı!");
-        infoPanel.SetActive(true);
-    }
-
-    public void HideInfo()
-    {
-        infoPanel.SetActive(false);
+        audioSource.PlayOneShot(clickSound);
     }
 }
