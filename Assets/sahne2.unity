@@ -3921,10 +3921,7 @@ MonoBehaviour:
   minDistance: 1.2
   collisionLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
-  useBounds: 0
-  minXZ: {x: -400, y: -400}
-  maxXZ: {x: 400, y: 400}
+    m_Bits: 1
 --- !u!1001 &102687397
 PrefabInstance:
   m_ObjectHideFlags: 0
