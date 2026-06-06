@@ -1,12 +1,8 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor.Search;
-
 public class ZombieKill : MonoBehaviour
 {
     public level2Manager gameManager;
-    public AudioSource Hırıltılı;
-    public AudioSource yeme;
 
     private bool oldu = false;
 
@@ -15,16 +11,6 @@ public class ZombieKill : MonoBehaviour
         if (other.CompareTag("Player") && !oldu)
         {
             oldu = true;
-
-            if (Hırıltılı != null && Hırıltılı.isPlaying)
-            {
-                Hırıltılı.Stop();
-            }
-
-            if (yeme != null)
-            {
-                yeme.Play();
-            }
 
             // Karakteri düşür
             Animator anim = other.GetComponent<Animator>();

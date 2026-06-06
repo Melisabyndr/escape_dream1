@@ -11,6 +11,15 @@ public class PlayerController : MonoBehaviour
     [Header("Mouse Look")]
     public float mouseSensitivity = 150f;
 
+    // --- SES İÇİN EKLENEN DEĞİŞKENLER ---
+    private AudioSource audioSource;
+    [Header("Audio Settings")]
+    [Tooltip("Yürüme/Koşma ses perdesi hızı (Yürürken standart hızda çalar)")]
+    public float walkPitch = 1f;
+    [Tooltip("Koşarken sesin ne kadar hızlı/ritmik çalacağını belirler")]
+    public float sprintPitch = 1.3f;
+    // ------------------------------------
+
     private CharacterController cc;
     private float yVelocity;
     private bool isDead;
@@ -28,6 +37,13 @@ public class PlayerController : MonoBehaviour
             anim.applyRootMotion = false;
 
         cc = GetComponent<CharacterController>();
+
+        // AudioSource bileşenini alıyoruz
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogWarning("Player üzerinde AudioSource bulunamadı! Seslerin çalması için lütfen bir AudioSource ekleyin.");
+        }
 
         if (cc == null)
         {
@@ -85,6 +101,38 @@ public class PlayerController : MonoBehaviour
 
             anim.SetFloat("Speed", moveAmount);
         }
+
+        // --- SES KONTROLÜ BURADA YAPILIYOR ---
+        if (audioSource != null)
+        {
+            // Şart: Karakter klavyeden girdi alıyor mu (hareket ediyor mu) VE yerde mi?
+            if (input.magnitude > 0.1f && cc.isGrounded)
+            {
+                // Eğer koşuyorsa ses perdesini hızlandır, yürüyorsa normale çek
+                if (isSprinting && v > 0f)
+                {
+                    audioSource.pitch = sprintPitch;
+                }
+                else
+                {
+                    audioSource.pitch = walkPitch;
+                }
+
+                // Ses zaten çalmıyorsa başlat
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
+            }
+            else
+            {
+                // Karakter duruyorsa veya havadaysa (zıpladıysa) sesi kes
+                if (audioSource.isPlaying)
+                {
+                    audioSource.Stop();
+                }
+            }
+        }
     }
 
     public void Die()
@@ -92,6 +140,12 @@ public class PlayerController : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
+
+        // Karakter ölürse sesi anında kes
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
 
         if (anim != null)
         {
