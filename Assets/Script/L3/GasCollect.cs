@@ -2,23 +2,20 @@ using UnityEngine;
 
 public class GasCollect : MonoBehaviour
 {
-    // Unity Inspector panelinden ses dosyasını buraya sürükleyip bırakacaksın
     public AudioClip gasPickupSound;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            // Eğer bir ses dosyası atandıysa, benzinin olduğu pozisyonda sesi çalar
             if (gasPickupSound != null)
             {
-                AudioSource.PlayClipAtPoint(gasPickupSound, transform.position);
+                // transform.position yerine Camera.main.transform.position yazdık
+                // En sona da ses seviyesini maksimum (1.0f) yapan bir çarpan ekledik
+                AudioSource.PlayClipAtPoint(gasPickupSound, Camera.main.transform.position, 1.0f);
             }
 
-            // Senin mevcut benzin toplama kodun
             Game.Instance.CollectGas();
-
-            // Benzin bidonunu sahneden yok et
             Destroy(gameObject);
         }
     }
