@@ -18,6 +18,7 @@ public class BookRainSpawner : MonoBehaviour
 
     [Header("Book Force")]
     public float randomTorque = 5f;
+    public float downwardForce = 10f; // kitapları aşağı doğru hızlandırır
 
     [Header("Cleanup")]
     public float destroyAfterSeconds = 10f;
@@ -41,7 +42,6 @@ public class BookRainSpawner : MonoBehaviour
     {
         if (prefabs == null || prefabs.Count == 0) return;
 
-        // Listeden rastgele prefab sec
         GameObject selectedPrefab = prefabs[Random.Range(0, prefabs.Count)];
         if (selectedPrefab == null) return;
 
@@ -56,11 +56,15 @@ public class BookRainSpawner : MonoBehaviour
         Rigidbody rb = spawned.GetComponent<Rigidbody>();
         if (rb != null)
         {
+            // Kitabı aşağı doğru hızlandırır
+            rb.AddForce(Vector3.down * downwardForce, ForceMode.Impulse);
+
+            // Kitabın havada dönmesini sağlar
             Vector3 torque = Random.insideUnitSphere * randomTorque;
             rb.AddTorque(torque, ForceMode.Impulse);
         }
 
-        Destroy(spawned, destroyAfterSeconds); // sahneyi sisirmesin
+        Destroy(spawned, destroyAfterSeconds);
     }
 
     void OnDrawGizmosSelected()

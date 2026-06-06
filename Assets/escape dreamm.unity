@@ -35647,7 +35647,8 @@ MonoBehaviour:
   spawnHeightOffset: 0.94
   minSpawnDelay: 0.02
   maxSpawnDelay: 1
-  randomTorque: 10
+  randomTorque: 30
+  downwardForce: 45
   destroyAfterSeconds: 150
 --- !u!4 &1911874666
 Transform:
@@ -38384,6 +38385,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1694388104871626409, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1654283407}
+    - targetCorrespondingSourceObject: {fileID: 900651729047986457, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 2147269747}
   m_SourcePrefab: {fileID: 100100000, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
 --- !u!1 &2084104933
 GameObject:
@@ -39538,6 +39542,36 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aadcb7fd3d069dd4ea515dab1bd7998a, type: 3}
+--- !u!1 &2147269742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 900651729047986457, guid: 678bf8bc91771fa498236de892b83d1d, type: 3}
+  m_PrefabInstance: {fileID: 2082056878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2147269747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147269742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0362ef00ff7574ba24e5fed0a4f9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::cameracontroller
+  target: {fileID: 0}
+  offset: {x: 0, y: 3, z: -5}
+  lookHeight: 2.2
+  smoothSpeed: 12
+  collisionRadius: 0.3
+  wallOffset: 0.25
+  minDistance: 1.2
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  useBounds: 0
+  minXZ: {x: -400, y: -400}
+  maxXZ: {x: 400, y: 400}
 --- !u!1001 &7498068345697476779
 PrefabInstance:
   m_ObjectHideFlags: 0
