@@ -433,7 +433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 657, y: 482}
+  m_AnchoredPosition: {x: 820, y: 388}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250110011
@@ -1381,8 +1381,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 791.5, y: -4.500122}
-  m_SizeDelta: {x: 1663, y: 15}
+  m_AnchoredPosition: {x: 940.82, y: 1.4998779}
+  m_SizeDelta: {x: 1961.6, y: 2.9999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &852315936
 MonoBehaviour:
@@ -1819,7 +1819,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -417}
-  m_SizeDelta: {x: 250, y: 100}
+  m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478195329
 MonoBehaviour:
@@ -2225,7 +2225,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 386}
-  m_SizeDelta: {x: 400, y: 50}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1602674850
 MonoBehaviour:
@@ -2247,19 +2247,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ana karakterimiz uyudu\u011Funda kendini korkular\u0131ndan ka\xE7maya
-    \xE7al\u0131\u015Fan bir r\xFCyan\u0131n i\xE7inde s\u0131k\u0131\u015Fm\u0131\u015F
-    bulur. Oyun 3 levelden olu\u015Fuyor.\nKarakterimizin ilk korkusu \xFCzerine
-    d\xFC\u015Fen kitaplard\u0131r. Kitaplardan ka\xE7arken k\xFCt\xFCphanenin anahtar\u0131n\u0131
-    al\u0131p ka\xE7abilirse k\xFCt\xFCphane ortam\u0131ndan kurtulur.\nK\xFCt\xFCphane
-    ortam\u0131ndan sonrada kendini okul koridorunda arkasa\u0131ndan gelen zombiden
-    ka\xE7arken bulur kendisini. Zombiden ka\xE7arken do\u011Fru \xE7\u0131k\u0131\u015F\u0131
-    kap\u0131s\u0131n\u0131 bularak \xE7\u0131k\u0131\u015Fa ula\u015Fmaya \xE7al\u0131\u015F\u0131r.\nDo\u011Fru
-    \xE7\u0131k\u0131\u015Ftan \xE7\u0131kabilirse arkas\u0131ndan gelen k\xF6peklerden
-    ka\xE7arken bulur kendisini. Onlardan ka\xE7abilmesi i\xE7in otob\xFCs\xFC \xE7al\u0131\u015Ft\u0131rmas\u0131
-    laz\u0131m ama yeteri kadar benzin bidonu toplamas\u0131 laz\u0131m. E\u011Fer
-    yeteri kadar benzin bidonu toplarsa otb\xFCs\xFC \xE7al\u0131\u015Ft\u0131r\u0131p
-    s\u0131k\u0131\u015Fm\u0131\u015F r\xFCyas\u0131ndan kurtulur."
+  m_text: "R\xFCyadan Ka\xE7\u0131\u015F, a\u011F\u0131r ders y\xFCk\xFC, bitmeyen
+    sayfalar ve yakla\u015Fan s\u0131nav saatinin yaratt\u0131\u011F\u0131 zihinsel
+    \xE7\xF6k\xFC\u015F nedeniyle kabus dolu bir r\xFCya d\xF6ng\xFCs\xFCne hapsolmu\u015F
+    \xFCniversite \xF6\u011Frencisi gen\xE7 bir k\u0131z\u0131n hik\xE2yesini konu
+    alan psikolojik korku ve ka\xE7\u0131\u015F odas\u0131 oyunudur. Karakterin ger\xE7ek
+    hayatta y\xFCzle\u015Fmekten ka\xE7t\u0131\u011F\u0131 t\xFCm akademik bask\u0131lar
+    ve soyut korkular, bu r\xFCyada fiziksel ve \xF6l\xFCmc\xFCl birer tehdide d\xF6n\xFC\u015F\xFCr.
+    Oyuncu; tehlike olarak yukar\u0131dan d\xFC\u015Fen kitaplarla kaotikle\u015Fen
+    lo\u015F bir k\xFCt\xFCphanede uyan\u0131r, klostrofobik okul koridorlar\u0131nda
+    k\xF6r noktalardan beliren agresif bir zombiden ka\xE7ar ve nihayetinde gece
+    karanl\u0131\u011F\u0131nda, ya\u011Fan ya\u011Fmur alt\u0131nda Hacettepe \xDCniversitesi
+    Ba\u015Fkent MYO Bah\xE7esi'nde vah\u015Fi k\xF6pekleri atlatarak hayatta kalma
+    m\xFCcadelesi verir."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2286,8 +2286,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2373,7 +2373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19.153}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 754, y: -564}
+  m_AnchoredPosition: {x: 886, y: -457}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611104419
@@ -3001,7 +3001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -793, y: -557}
+  m_AnchoredPosition: {x: -938, y: -481}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2094780724
