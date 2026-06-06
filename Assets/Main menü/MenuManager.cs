@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ButtonSound : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip clickSound;

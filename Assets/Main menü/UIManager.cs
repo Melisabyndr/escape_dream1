@@ -1,28 +1,28 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+
 public class UIManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject infoPanel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void StartGame()
     {
         SceneManager.LoadScene("IntroScene");
-
     }
+
     public void ExitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false; 
+        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
+    }
+
+    public void ShowInfo()
+    {
+        infoPanel.SetActive(true);
+    }
+
+    public void HideInfo()
+    {
+        infoPanel.SetActive(false);
     }
 }
