@@ -60,8 +60,12 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead || cc == null || !cc.enabled) return;
 
-        // Mouse ile karakteri sağa sola döndürür
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+
+        cameracontroller camCtrl = GetComponentInChildren<cameracontroller>();
+        if (camCtrl != null)
+            mouseX = camCtrl.ClampHorizontalRotation(mouseX);
+
         transform.Rotate(0f, mouseX, 0f);
 
         // Klavye hareketi

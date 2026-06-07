@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class UIManager : MonoBehaviour
 {
     public GameObject infoPanel;
@@ -12,8 +16,11 @@ public class UIManager : MonoBehaviour
 
     public void ExitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
     public void ShowInfo()
