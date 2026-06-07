@@ -5799,7 +5799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 381.1
+      value: 376.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5807,7 +5807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 502.3
+      value: 526.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6587,11 +6587,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 84.5
+      value: 82.08
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12822,7 +12822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &94718471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -14560,7 +14560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &107576673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -24443,9 +24443,6 @@ MonoBehaviour:
   collisionLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  useBounds: 0
-  minXZ: {x: -400, y: -400}
-  maxXZ: {x: 400, y: 400}
 --- !u!1001 &177711525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39954,7 +39951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &285921010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46094,7 +46091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &322217387 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -60734,7 +60731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &410039851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1364922359172550, guid: 1aaf3ef80841d9c4990a27fee328eb1c, type: 3}
@@ -60895,7 +60892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &410717372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76548,7 +76545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &507867589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77239,7 +77236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &511991627 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1214657917099862, guid: 78f6b68ad931a824c920d7b953612370, type: 3}
@@ -83173,7 +83170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &557856828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -88556,6 +88553,82 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
   m_PrefabInstance: {fileID: 1844884607}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &595408422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1975858853}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 603.26
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -116.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ff6e9fb60b0efcf46a92adb12aa69811, type: 2}
+    - target: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      propertyPath: m_Name
+      value: Ground mask (1859)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 861793387}
+  m_SourcePrefab: {fileID: 100100000, guid: 86cc60432c735e84883abedc6faad860, type: 3}
 --- !u!1001 &596064039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105067,7 +105140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &698294695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105525,7 +105598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &699722035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106828,7 +106901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &709146598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121610,15 +121683,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 195.7
+      value: 204.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 308.11
+      value: 286.9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -124581,7 +124654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &813197143 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -131772,6 +131845,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0.00000047683716, y: 0.0000000018626451, z: 0}
+--- !u!1 &861793385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+  m_PrefabInstance: {fileID: 595408422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &861793386 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 86cc60432c735e84883abedc6faad860, type: 3}
+  m_PrefabInstance: {fileID: 595408422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &861793387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861793385}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 0, z: 1}
+  m_Center: {x: 0.000000029802322, y: 0, z: 0}
 --- !u!1 &862504742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -142869,7 +142973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &921699580 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -163910,15 +164014,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 229
+      value: 224.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 482
+      value: 486.93
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -167265,7 +167369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &1045728178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1ed05b93464bb6242b1d0cf9e388ed67, type: 3}
@@ -170120,7 +170224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &1066827573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176074,7 +176178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &1102669906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -209052,11 +209156,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.64
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 445.9
+      value: 462.9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -215176,15 +215280,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 115.75
+      value: 130.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 132.76
+      value: 165.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -218603,7 +218707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &1345707212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1743353957770956, guid: 82a6bf9ca38d9d443997ccec084ba669, type: 3}
@@ -225860,7 +225964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -96.5
+      value: -52
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
@@ -238978,7 +239082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &1474490506 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -284800,7 +284904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &1718267180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -312722,7 +312826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!4 &1878333038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
@@ -332224,6 +332328,7 @@ Transform:
   - {fileID: 739665897}
   - {fileID: 1117733466}
   - {fileID: 1844884608}
+  - {fileID: 861793386}
   - {fileID: 1261863751}
   - {fileID: 2117208745}
   - {fileID: 1944815030}
@@ -336038,7 +336143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &1993724468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -347418,7 +347523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1001 &2057892893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -348217,7 +348322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &2063097772 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -351830,7 +351935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.3
+      value: -41.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
@@ -351838,7 +351943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 290
+      value: 591.9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
@@ -352730,7 +352835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db987118a8891374ebbdd7ef3985871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GasCollect
-  gasPickupSound: {fileID: 8300000, guid: fd5177c09ff4d7b4fab02b290c3f11a1, type: 3}
+  gasPickupSound: {fileID: 8300000, guid: c14013c1f123de54abd2ae0f62a31647, type: 3}
 --- !u!1 &2090134174 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 86cc60432c735e84883abedc6faad860, type: 3}
@@ -359760,15 +359865,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -9.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 135.9
+      value: 154.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f323c82c136d9a64a8413f700e474336, type: 3}
       propertyPath: m_LocalRotation.w
